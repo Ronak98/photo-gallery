@@ -1,50 +1,50 @@
 [
     {
         "id": "1",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=1"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=1"
     },
     {
         "id": "2",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=2"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=2"
     },
     {
         "id": "3",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=3"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=3"
     },
     {
         "id": "4",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=4"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=4"
     },
     {
         "id": "5",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=5"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=5"
     },
     {
         "id": "6",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=6"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=6"
     },
     {
         "id": "7",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=7"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=7"
     },
     {
         "id": "8",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=8"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=8"
     },
     {
         "id": "9",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=9"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=9"
     },
     {
         "id": "10",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=10"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=10"
     },
     {
         "id": "11",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=11"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=11"
     },
     {
         "id": "12",
-        "path": "https://source.unsplash.com/random/1600x900/?portrait&img=12"
+        "src": "https://source.unsplash.com/random/1600x900/?portrait&img=12"
     }
 ]

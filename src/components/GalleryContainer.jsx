@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { Layout, Col, Row, Image } from "antd";
+import Lightbox from "yet-another-react-lightbox";
+import HeaderContainer from "../shared-components/header/HeaderContainer";
 import galleryData from "../json/galleryData.json";
-import "../style.css";
-import HeaderContainer from "../shared-components/HeaderContainer";
+
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const { Content } = Layout;
 
@@ -16,22 +21,34 @@ const contentStyle = {
 };
 
 function GalleryContainer() {
+  const [index, setIndex] = useState(-1);
+
   return (
     <Layout style={layoutStyle}>
       <HeaderContainer name="Photo Gallery!" />
       <Content>
         <div style={contentStyle}>
-          <Image.PreviewGroup>
-            <Row gutter={[16, 16]}>
-              {galleryData.map(({ id, path }) => (
-                <Col key={id} xs={24} sm={12} md={8} lg={6}>
-                  <Image width="100%" src={path} />
-                </Col>
-              ))}
-            </Row>
-          </Image.PreviewGroup>
+          <Row gutter={[16, 16]}>
+            {galleryData.map(({ id, src }, index) => (
+              <Col key={id} xs={24} sm={12} md={8} lg={6}>
+                <Image
+                  src={src}
+                  width="100%"
+                  preview={{ visible: false }}
+                  onClick={() => setIndex(index)}
+                />
+              </Col>
+            ))}
+          </Row>
         </div>
       </Content>
+      <Lightbox
+        slides={galleryData}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        plugins={[Thumbnails]}
+      />
     </Layout>
   );
 }
