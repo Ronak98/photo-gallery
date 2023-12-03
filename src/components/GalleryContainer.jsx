@@ -18,14 +18,14 @@ const contentStyle = {
 function GalleryContainer() {
   return (
     <Layout style={layoutStyle}>
-      <HeaderContainer name={"Photo Gallery!"} />
+      <HeaderContainer name="Photo Gallery!" />
       <Content>
         <div style={contentStyle}>
           <Image.PreviewGroup>
             <Row gutter={[16, 16]}>
               {galleryData.map(({ id, path }) => (
                 <Col key={id} xs={24} sm={12} md={8} lg={6}>
-                  <Image width={"100%"} src={path} />
+                  <Image width="100%" src={path} />
                 </Col>
               ))}
             </Row>
